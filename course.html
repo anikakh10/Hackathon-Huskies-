@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+	<!-- <link rel="stylesheet" type="text/css" href="new2.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  #nav_courses{
+    background-color: #cfe741;
+      padding: 1em;
+      text-align: center;
+      height: 60px;
+  }
+
+  nav a {
+      margin: 0 15px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+ 
+  .title{
+    text-align: center;
+    color: #cfe741;
+    margin-bottom: 2rem;
+  }
+ 
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+  .card{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+ 
+  .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+ 
+  .card h2{
+    margin: 1rem 0;
+    color: #333;
+    font-size: 1.5rem;
+  }
+ 
+  .card p{
+    margin: 0;
+    color: #666;
+    font-size: 0.8rem;
+  }
+
+  .btn{
+    background-color: rgb(36, 36, 70);
+    color: #fff;
+    
+  }
+ 
+  .button{
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #234c24;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 1rem auto 0 auto;
+  }
+ 
+  .button:hover{
+    background-color: #3e8e41;
+  }
+ 
+  .card-content{
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ 
+  .card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+  }
+</style>
+<body>
+  <div><nav id="nav_courses">
+    <div style="float: inline-start;">
+        <a href="home.html">Home</a>
+    </div>
+    <div style="float: inline-end;">
+        <input style="border-radius: 0.5rem;border: none;width: 300px;height: 32px; margin-right: 50px; " placeholder="Search Courses"/>
+    </div>
+  </nav></div>
+	<div class="container">
+		<h1 class="title">Listed Universities (As per your preference) </h1>
+		<div class="card-container">
+			<div class="card">
+				<img src=https://www.mit.edu/files/images/202403/MIT-Campus-Photos_102323_141-Belcher-home.jpg alt="Adventure Sports" class="card-img-top">
+				<div class="card-body">
+					<h2 class="card-title">Massachusetts Institute of Technology</h2>
+					<p class="card-text">Boston, United States</p>
+					<p class="card-text">from 7,918 USD (Bachelor's Degree) </p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://caltech-prod.s3.amazonaws.com/main/images/Cahill_3087-Lance2012.max-1400x800.jpg alt="Fear Of Driving And Automatic" class="card-img-top">
+				
+				
+				<div class="card-body">
+					<h2 class="card-title">Caltech</h2>
+					<p class="card-text">California, United States</p>
+					<p class="card-text">from 29,760 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://cdn.unischolarz.com/blog/wp-content/uploads/2021/05/11132854/university_of_cambridge_0.jpg alt="Negative Thoughts" class="card-img-top">
+				
+				<div class="card-body">
+					<h2 class="card-title">Cambridge University</h2>
+					<p class="card-text">Cambridge, UK</p>
+					<p class="card-text">from 29,718 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://scpd.stanford.edu/sites/default/files/2020-08/stanford-oval.jpg alt="Analytics" class="card-img-top">
+				
+				<div class="card-body">
+					<h2 class="card-title">Stanford University</h2>
+					<p class="card-text">California, USA</p>
+					<p class="card-text">from 57,678 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://snworksceo.imgix.net/dpn/03b7b27d-c977-4e8d-be2c-2c894d45bf0e.sized-1000x1000.jpg?w=1000 alt="Sales and Operations" class="card-img-top">
+				
+				<div class="card-body">
+					<h2 class="card-title">University of Chicago</h2>
+					<p class="card-text">Chicago, USA</p>
+					<p class="card-text">from 59 240 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://study-eu.s3.eu-west-1.amazonaws.com/uploads/image/path/132/wide_fullhd_ucl-university-college-london.jpg alt="Marketing New" class="card-img-top">
+				
+				
+				<div class="card-body">
+					<h2 class="card-title">University College London</h2>
+					<p class="card-text">London, Great Britain</p>
+					<p class="card-text">from 24 492 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

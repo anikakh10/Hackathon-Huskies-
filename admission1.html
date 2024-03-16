@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+	<!-- <link rel="stylesheet" type="text/css" href="new2.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  #nav_courses{
+    background-color: #cfe741;
+      padding: 1em;
+      text-align: center;
+      height: 60px;
+  }
+
+  nav a {
+      margin: 0 15px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+ 
+  .title{
+    text-align: center;
+    color: #cfe741;
+    margin-bottom: 2rem;
+  }
+ 
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+  .card{
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+ 
+  .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+ 
+  .card h2{
+    margin: 1rem 0;
+    color: #333;
+    font-size: 3 rem;
+
+  }
+ 
+  .card p{
+    margin: 0;
+    color: #666;
+    font-size: 1.5 rem;
+  }
+
+  .btn{
+    background-color: rgb(36, 36, 70);
+    color: #fff;
+    
+  }
+ 
+  .button{
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #234c24;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 1rem auto 0 auto;
+  }
+ 
+  .button:hover{
+    background-color: #3e8e41;
+  }
+ 
+  .card-content{
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ 
+  .card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+  }
+</style>
+<body>
+  <div><nav id="nav_courses">
+    <div style="float: inline-start;">
+        <a href="home.html">Home</a>
+    </div>
+    <div style="float: inline-end;">
+        <input style="border-radius: 0.5rem;border: none;width: 300px;height: 32px; margin-right: 50px; " placeholder="Search Courses"/>
+    </div>
+  </nav></div>
+	<div class="container">
+		<h1 class="title">ADMISSIONS</h1>
+		<div class="card-container">
+			<div class="card">
+			<img src=https://www.timeshighereducation.com/student/sites/default/files/harvard-university-campus.jpg alt="Adventure Sports" class="card-img-top"> 
+				<div class="card-body">
+					<h2 class="card-title">Popular Destinations</h2>
+					<p class="card-text">USA</p>
+					<p class="card-text">UK</p>
+					<p class="card-text">Germany</p>
+					<p class="card-text">Canada</p>
+
+					<a href="#" class="btn btn-primary">Other Countries</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://img.freepik.com/premium-vector/exam-sheet-with-plus-grade-education-test_131590-367.jpg?w=740 alt="Fear Of Driving And Automatic" class="card-img-top">
+				
+				
+				<div class="card-body">
+					<h2 class="card-title">Exam Score</h2>
+					<p class="card-text">SAT</p>
+					<p class="card-text">GRE</p>
+					<p class="card-text">GMAT</p>
+					<p class="card-text">IELTS</p>
+					<a href="#" class="btn btn-primary">Other Scores</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://img.freepik.com/free-photo/corporate-business-paperwork-stack-messy-desk-generated-by-ai_24911-72362.jpg?t=st=1710591557~exp=1710595157~hmac=dd9bde67f3e19e69704a226a9b6e1a90fee6a5f09bc3cb39112a5e23517f134c&w=1060 alt="Negative Thoughts" class="card-img-top">
+				
+				<div class="card-body">
+					<h2 class="card-title">Documents Required</h2>
+					<p class="card-text">Letter of Reccomendation</p>
+					<p class="card-text">Motivation Letter</p>
+					<p class="card-text">Scholarship</p>
+					<a href="#" class="btn btn-primary">Other Documents</a>
+				</div>
+			</div>
+			<!-- <div class="card">
+				<img src=https://scpd.stanford.edu/sites/default/files/2020-08/stanford-oval.jpg alt="Analytics" class="card-img-top"> 
+				
+				<div class="card-body">
+					<h2 class="card-title">Stanford University</h2>
+					<p class="card-text">California, USA</p>
+					<p class="card-text">from 57,678 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://snworksceo.imgix.net/dpn/03b7b27d-c977-4e8d-be2c-2c894d45bf0e.sized-1000x1000.jpg?w=1000 alt="Sales and Operations" class="card-img-top">
+				
+				<div class="card-body">
+					<h2 class="card-title">University of Chicago</h2>
+					<p class="card-text">Chicago, USA</p>
+					<p class="card-text">from 59 240 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src=https://study-eu.s3.eu-west-1.amazonaws.com/uploads/image/path/132/wide_fullhd_ucl-university-college-london.jpg alt="Marketing New" class="card-img-top">
+				
+				
+				<div class="card-body">
+					<h2 class="card-title">University College London</h2>
+					<p class="card-text">London, Great Britain</p>
+					<p class="card-text">from 24 492 USD (Bachelor's Degree)</p>
+					<a href="#" class="btn btn-primary">Enroll Now</a>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</body>
+</html>

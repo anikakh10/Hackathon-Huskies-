@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My LMS - Learn Anytime, Anywhere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header {
+        background-color:  #202124;
+        color: white;
+        padding: 1em;
+        padding-bottom: 01px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #cfe741;
+        padding: 1em;
+        text-align: center;
+        display: flex; 
+        justify-content: space-around; 
+        border-top: 4px solid #cfe741; 
+        border-bottom: 4px solid #cfe741;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 1em;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: #202124;
+        text-decoration: none;
+        margin: 0 15px;  
+        font-weight: bold; 
+        font-size: 16px; 
+        padding: 5px 10px; 
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #EFECEC;
+        background-color: #202124;
+        padding: 0.5em;
+        border-radius: 5px;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        margin-left: 1em;
+    }
+
+    .search-form input {
+        border: 1px solid #202124;
+        border-radius: 5px;
+        padding: 0.5em;
+    }
+
+    .search-form button {
+        background-color: #202124;
+        color: #EFECEC;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5em 1em;
+        cursor: pointer;
+    }
+
+    .search-form button:hover {
+        background-color: #EFECEC;
+        color: #202124;
+    }
+
+    .hero {
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      background-color: #202124;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px;
+      background-color: #cfe741
+    }
+
+    .course-card {
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card-content {
+      padding-left: 25px;
+      padding-top: 10;
+    }
+
+    .course-card h2 {
+      color: black;
+    }
+
+    .course-card p {
+      color: rgb(50, 49, 49);
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    #about{
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: #cfe741;
+}
+
+.header2 {
+	background-color:black;
+	padding: 20px;
+	text-align: center;
+    color: white;
+}
+
+section {
+	padding: 20px;
+}
+#mission{
+    background-color:white;
+    color: black;
+}
+
+#mission h2 {
+	padding: 0px 100px;
+}
+
+#mission p {
+	padding: 0px 100px;
+}
+
+#team {
+	display: flex;
+	justify-content: space-around;
+    background-color: #cfe741;
+    color: black;
+
+}
+
+.team-member {
+	text-align: center;
+}
+
+.team-member img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+footer {
+	background-color: #f4f4f4;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+.parent{
+    font-family: Roboto,"sans-serif";
+    background-color: rgb(225, 239, 250);
+    margin: 0;
+    padding: 0px;
+    font-size: 15px;
+    font-family: Roboto,"sans-serif";
+}
+
+.table2{
+    width: 50%;
+    /* background-color: #3b3333; */
+    margin-top: 5px;
+    /* margin-bottom: 0; */
+    padding-left: 5%;
+    margin-bottom: 0;
+
+}
+.title{
+    line-height: 20px;
+}
+.parentcard{
+    background-color:#202124;
+    height: 700px;
+    width: 100%;
+    align-items: center;
+    font-size: 12px;
+    padding: 1rem;
+}
+
+
+
+.childcard{
+    background-color:white;
+    margin : auto;
+    padding-left: 80px;
+    height: 75%;
+    width: 35%;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 1rem;
+    font-family: "Roboto",sans-serif;
+    padding: 3rem 4rem 0rem 4rem;
+    margin-top: 100px;
+    
+}
+
+
+.m{
+    display: flex;
+    
+}
+.para{
+    /* font-size: 12px; */
+    display: flex;
+    /* margin-left: 22%; */
+}
+
+input[type=text]{
+    
+    border-radius: 0.4rem;
+    background-color:white;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    width:330px ;
+    border: 1px solid rgb(149, 146, 146);
+    height: 80px;
+    /* display: flex; */
+    
+}
+input[type=email]{
+    
+    border-radius: 0.4rem;
+    background-color:white;
+    
+    padding: 0.2rem;
+    margin: 0.1rem;
+    width: 330px;   
+    border: 1px solid rgb(149, 146, 146);
+}
+
+.button11{
+    width: 320px;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 3px;
+    font-size: 10px;
+    background-color:#cfe741;
+    color:rgb(241, 236, 236);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://www.chromeinfotech.net/industries/images/education-icon.png" style="width: 85px; align-content: flex-start;">
+    <h1>UNI-CONNECT</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- <a href="#" class="navbar-brand">Menu</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="filtercourse.html">Programs</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="admission1.html">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="create_acc.html" >Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login.html" >Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#supportt" >Support</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Study Abroad with Uni-Connect</h1>
+    <p>Your Education Abroad Expert</p>
+  </div>
+  <br>
+  <h2 style="margin-left: 11%; color: #202124;">Top Universities</h2>
+  <div class="course-grid">
+    <!-- Example Course Card 1 -->
+    <div class="course-card">
+      <p style="margin-left: 25px;">Preference-1</p>
+      <div class="course-card-content">
+        <h2>Columbia University</h2>
+        <p>2960 Broadway, New York, NY 10027 United States
+          #7 in Best Global Universities
+          </p>
+      </div>
+    </div>
+    <!-- Example Course Card 2 -->
+    <div class="course-card">
+        <p style="margin-left: 25px;">Preference-2</p>
+      <div class="course-card-content">
+        <h2>Northwestern University</h2>
+        <p>633 Clark Street, Evanston, IL 60208 United States
+          #24 in Best Global Universities
+          </p>
+      </div>
+    </div>
+    <div class="course-card">
+        <p style="margin-left: 25px;">Preference-3</p>
+      <div class="course-card-content">
+        <h2>Yale University</h2>
+        <p>New Haven, CT 06520 United States
+          #11 in Best Global Universities
+          </p>
+      </div>
+      <a href="course.html" style="margin-left: 210px; text-decoration: none; color:#202124 ;" ><strong>More Universities</strong> </a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <main id="supportt">
+    <div class="parentcard">
+        
+        <div class="peppo">
+            
+            
+        </div>
+       
+        <div class="childcard">  
+            <div class="title">            
+                <h1 class="m"><b>Contact us</b></h1>
+               <h6 class="para">Need to get in touch? Use this form.</h6>
+            </div> <br>
+            
+            <label for="mail">Email<br><input type="email" name="mail" id="email" placeholder="Enter your Email"/></label><br><br>
+            <label for="pwd">Your Query...<br><input type="text" name="msg" placeholder="Enter Your Query" /></label>
+            <br>
+            <br>
+            <label><strong>Attach a pic of your file:</strong></label>
+            <input type="file" style="border-radius: 0.5 rem">
+            <br>
+            <br>
+            <button class="button11">Send Message</button>
+            <table class="table2">
+            </table>
+            <br>
+            
+            
+        </div>
+        
+    </div>
+    
+  </main>
+
+
+
+  <div id="about">
+    <header class="header2">
+        <h1>Welcome to Our EdTech Website!</h1>
+    </header>
+    <section id="mission">
+        <h2>What We Do:</h2>
+        <p>Uni-connect aimed at assisting students who are confused 
+          about their higher education and needs a guidance.
+           It solves a real world problem on a root level.
+           We tell the ideal program depending on your goals,
+           draw up and submit an application.
+           We Connects the existing students and alumni with users.
+           Send updates about the application process.
+           Send notification about the relevant information about universities they want to apply at.
+           We will analyze your profile in detail match it with the requirement of the universities
+           and select for you the one that will help you achieve your goals.
+           We will provide Visa Support.
+           We save time and money. We study all of the necessary requirements and deadlines,
+           providing you with a clear strategy that we navigate together.
+
+
+
+
+
+          </p>
+    </section>
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="ceo.jpg" alt="Team Member 1">
+            <h3>Anika Khajuria</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="ceo.jpg" alt="Team Member 2">
+            <h3>Mona Agrawal</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="ceo.jpg" alt="Team Member 3">
+            <h3>Rajdeep Singha</h3>
+            <p>CEO & Founder</p>
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy; 2022 Our EdTech Website. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
